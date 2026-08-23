@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Contact Haven Printing Company INC – Paynesville, Liberia. Call, WhatsApp, or email us for all printing enquiries." />
+    <title>Contact Us | Haven Printing Company INC</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.jpg" alt="Haven Printing Company Logo"
+                    class="logo-img" />
+                <span class="logo-text">Haven Printing <span class="accent">Co.</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li><li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="booking.html" class="nav-link btn-nav">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero short">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <span class="section-tag light">Reach Out</span>
+            <h1>Contact Us</h1>
+            <p>We're easy to reach — call, WhatsApp, or drop by our Paynesville shop.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO CARDS -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-cards-grid">
+                <a href="tel:+231779385933" class="contact-card">
+                    <div class="cc-icon"><i class="fa-solid fa-phone"></i></div>
+                    <h3>Call Us</h3>
+                    <p>+231 779 385 933</p>
+                    <span>Tap to call now</span>
+                </a>
+                <a href="https://wa.me/231779385933" target="_blank" class="contact-card whatsapp">
+                    <div class="cc-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p>+231 779 385 933</p>
+                    <span>Tap to chat now</span>
+                </a>
+                <a href="mailto:info@havenprinting.com" class="contact-card">
+                    <div class="cc-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Email Us</h3>
+                    <p>info@havenprinting.com</p>
+                    <span>We reply within 24 hours</span>
+                </a>
+                <div class="contact-card no-link">
+                    <div class="cc-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Visit Us</h3>
+                    <p>Paynesville, Liberia</p>
+                    <span>Mon–Sat: 8AM – 6PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM + MAP -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- FORM -->
+                <div class="contact-form-wrap">
+                    <span class="section-tag">Send a Message</span>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p>Have a question, want a quote, or just want to say hello? Fill out the form and we'll get back to
+                        you as soon as possible.</p>
+
+                    <form class="contact-form" id="contactForm" action="mailto:info@havenprinting.com" method="POST"
+                        enctype="text/plain">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cName">Your Name *</label>
+                                <input type="text" id="cName" name="Name" placeholder="Full name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="cPhone">Phone Number *</label>
+                                <input type="tel" id="cPhone" name="Phone" placeholder="+231 779 385 933" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cEmail">Email Address</label>
+                            <input type="email" id="cEmail" name="Email" placeholder="your@email.com" />
+                        </div>
+                        <div class="form-group">
+                            <label for="cSubject">Subject *</label>
+                            <input type="text" id="cSubject" name="Subject" placeholder="What's this about?" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="cMessage">Message *</label>
+                            <textarea id="cMessage" name="Message" rows="5" placeholder="Write your message here…"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- MAP + HOURS -->
+                <div class="contact-map-wrap">
+                    <div class="map-container">
+                        <!-- Replace src with actual Google Maps embed URL for exact location -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15881.4!2d-10.758!3d6.3053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf09f31e8509c63b%3A0x3b2e6efd4edc6e3c!2sPaynesville%2C+Liberia!5e0!3m2!1sen!2slr!4v1680000000000!5m2!1sen!2slr"
+                            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            title="Haven Printing Company Location – Paynesville, Liberia"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <div class="hours-block">
+                        <h3><i class="fa-solid fa-clock"></i> Business Hours</h3>
+                        <ul class="hours-list">
+                            <li><span>Monday</span><span>8:00 AM – 6:00 PM</span></li>
+                            <li><span>Tuesday</span><span>8:00 AM – 6:00 PM</span></li>
+                            <li><span>Wednesday</span><span>8:00 AM – 6:00 PM</span></li>
+                            <li><span>Thursday</span><span>8:00 AM – 6:00 PM</span></li>
+                            <li><span>Friday</span><span>8:00 AM – 6:00 PM</span></li>
+                            <li><span>Saturday</span><span>9:00 AM – 4:00 PM</span></li>
+                            <li class="closed"><span>Sunday</span><span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.jpg" alt="Haven Printing Logo"
+                        class="footer-logo" />
+                    <p>Haven Printing Company INC — delivering premium printing services across Liberia since 2018.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1G3RQKBgkR/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/231779385933" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Business Cards</a></li>
+                        <li><a href="services.html">Banners & Signage</a></li>
+                        <li><a href="services.html">Flyers & Leaflets</a></li>
+                        <li><a href="services.html">Brochures</a></li>
+                        <li><a href="services.html">Branded T-Shirts</a></li>
+                        <li><a href="services.html">Large Format Printing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> Paynesville, Liberia</li>
+                        <li><i class="fa-solid fa-phone"></i> <a href="tel:+231779385933">+231 779 385 933</a></li>
+                        <li><i class="fa-solid fa-envelope"></i> <a
+                                href="mailto:info@havenprinting.com">info@havenprinting.com</a></li>
+                        <li><i class="fa-solid fa-clock"></i> Mon–Sat: 8:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Haven Printing Company INC. All rights reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart" style="color:#e63946"></i> in Liberia</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/231779385933" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Book a print job with Haven Printing Company INC – Fill out our booking form and we'll get back to you fast." />
+    <title>Book a Print Job | Haven Printing Company INC</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.jpg" alt="Haven Printing Company Logo"
+                    class="logo-img" />
+                <span class="logo-text">Haven Printing <span class="accent">Co.</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li><li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="booking.html" class="nav-link btn-nav active">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero short">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <span class="section-tag light">Get Started</span>
+            <h1>Book a Print Job</h1>
+            <p>Tell us what you need — we'll handle the rest.</p>
+        </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="section booking-section">
+        <div class="container">
+            <div class="booking-grid">
+
+                <!-- FORM -->
+                <div class="booking-form-wrap">
+                    <h2>Submit Your Order Details</h2>
+                    <p>Fill in the form below and our team will contact you within a few hours to confirm your order and
+                        provide pricing.</p>
+
+                    <form class="booking-form" id="bookingForm" action="mailto:info@havenprinting.com" method="POST"
+                        enctype="text/plain">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="First Name" placeholder="Your first name"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="Last Name" placeholder="Your last name"
+                                    required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="Phone" placeholder="+231 779 385 933" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="Email" placeholder="your@email.com" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="Service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="Business Cards">Business Cards</option>
+                                <option value="Banners & Signage">Banners & Signage</option>
+                                <option value="Flyers & Leaflets">Flyers & Leaflets</option>
+                                <option value="Brochures & Booklets">Brochures & Booklets</option>
+                                <option value="Branded T-Shirts & Apparel">Branded T-Shirts & Apparel</option>
+                                <option value="Large Format Printing">Large Format Printing</option>
+                                <option value="Stickers & Labels">Stickers & Labels</option>
+                                <option value="Letterheads & Stationery">Letterheads & Stationery</option>
+                                <option value="Other">Other (describe below)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quantity">Quantity *</label>
+                                <input type="number" id="quantity" name="Quantity" placeholder="e.g. 500" min="1"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="deadline">Needed By (Date)</label>
+                                <input type="date" id="deadline" name="Deadline" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="size">Size / Dimensions</label>
+                            <input type="text" id="size" name="Size" placeholder="e.g. A4, 3.5x2 inches, 3m x 2m…" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="design">Do you have a design ready?</label>
+                            <select id="design" name="Design Ready">
+                                <option value="Yes - I will send the file">Yes — I'll send the file</option>
+                                <option value="No - I need design help">No — I need design help</option>
+                                <option value="Partially done">Partially done — need finishing</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Details / Notes</label>
+                            <textarea id="message" name="Details" rows="4"
+                                placeholder="Describe your project — colours, finishes, special requirements, etc."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="agree" required />
+                            <label for="agree">I agree to be contacted by Haven Printing Company INC regarding this
+                                order.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Booking Request
+                        </button>
+                    </form>
+                </div>
+
+                <!-- SIDEBAR INFO -->
+                <div class="booking-sidebar">
+                    <div class="sidebar-card">
+                        <h3><i class="fa-brands fa-whatsapp"></i> Prefer WhatsApp?</h3>
+                        <p>Many of our clients find it easier to send their order details via WhatsApp. Message us
+                            directly — we respond fast.</p>
+                        <a href="https://wa.me/231779385933" target="_blank" class="btn btn-whatsapp btn-full">
+                            <i class="fa-brands fa-whatsapp"></i> Chat Now on WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fa-solid fa-phone"></i> Call Us</h3>
+                        <p>Prefer to speak with someone? Give us a call during business hours.</p>
+                        <a href="tel:+231779385933" class="btn btn-outline btn-full">
+                            <i class="fa-solid fa-phone"></i> +231 779 385 933
+                        </a>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fa-solid fa-circle-info"></i> What Happens Next?</h3>
+                        <ol class="next-steps">
+                            <li>We receive your booking request</li>
+                            <li>Our team reviews your requirements</li>
+                            <li>We contact you within a few hours with pricing & timeline</li>
+                            <li>You approve — we get to work!</li>
+                        </ol>
+                    </div>
+
+                    <div class="sidebar-card hours-card">
+                        <h3><i class="fa-solid fa-clock"></i> Business Hours</h3>
+                        <ul class="hours-list">
+                            <li><span>Monday – Friday</span><span>8:00 AM – 6:00 PM</span></li>
+                            <li><span>Saturday</span><span>9:00 AM – 4:00 PM</span></li>
+                            <li><span>Sunday</span><span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.jpg" alt="Haven Printing Logo"
+                        class="footer-logo" />
+                    <p>Haven Printing Company INC — delivering premium printing services across Liberia since 2018.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1G3RQKBgkR/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/231779385933" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Business Cards</a></li>
+                        <li><a href="services.html">Banners & Signage</a></li>
+                        <li><a href="services.html">Flyers & Leaflets</a></li>
+                        <li><a href="services.html">Brochures</a></li>
+                        <li><a href="services.html">Branded T-Shirts</a></li>
+                        <li><a href="services.html">Large Format Printing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> Paynesville, Liberia</li>
+                        <li><i class="fa-solid fa-phone"></i> <a href="tel:+231779385933">+231 779 385 933</a></li>
+                        <li><i class="fa-solid fa-envelope"></i> <a
+                                href="mailto:info@havenprinting.com">info@havenprinting.com</a></li>
+                        <li><i class="fa-solid fa-clock"></i> Mon–Sat: 8:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Haven Printing Company INC. All rights reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart" style="color:#e63946"></i> in Liberia</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/231779385933" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+# Haven Printing Company INC - Robots.txt
+# Website: https://havenprinting.com
+# Allow all crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://havenprinting.com/sitemap.xml
+
+# Disallow admin or private folders (if any in future)
+# Disallow: /admin/
+# Disallow: /private/

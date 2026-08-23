@@ -1,0 +1,125 @@
+FAVICON SETUP GUIDE FOR HAVEN PRINTING COMPANY
+================================================
+
+What is a Favicon?
+------------------
+A favicon is the small icon that appears in browser tabs, bookmarks, and mobile home screens.
+Example: The small icon you see next to "Google" in your browser tab.
+
+Your Website Needs One!
+------------------------
+Currently, your website shows a generic browser icon. Adding your logo as a favicon makes your site look professional.
+
+HOW TO CREATE A FAVICON:
+========================
+
+OPTION 1: Online Favicon Generator (Easiest)
+---------------------------------------------
+1. Go to: https://favicon.io/favicon-converter/
+2. Upload your logo.jpg file
+3. Click "Download"
+4. You'll get a ZIP file with multiple favicon files
+
+Extract these files to your website root folder:
+- favicon.ico
+- favicon-16x16.png
+- favicon-32x32.png
+- apple-touch-icon.png
+- android-chrome-192x192.png
+- android-chrome-512x512.png
+- site.webmanifest
+
+5. Add this code to the <head> section of ALL your HTML pages:
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+OPTION 2: Simple ICO File (Quick)
+----------------------------------
+1. Go to: https://www.favicon-generator.org/
+2. Upload logo.jpg
+3. Click "Create Favicon"
+4. Download favicon.ico
+5. Save to website root folder
+6. Add to <head> of all HTML files:
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+OPTION 3: Use PNG (Works on modern browsers)
+---------------------------------------------
+1. Open logo.jpg in Paint or any image editor
+2. Resize to 192x192 pixels (square)
+3. Save as logo-icon.png
+4. Add to <head> of all HTML files:
+
+<link rel="icon" type="image/png" href="logo-icon.png">
+
+
+WHERE TO ADD THE CODE:
+======================
+Add favicon links in the <head> section of these files:
+- index.html
+- about.html
+- services.html
+- security-printing.html
+- portfolio.html
+- gallery.html
+- faq.html
+- booking.html
+- contact.html
+
+Add it right after the <meta charset="UTF-8" /> line
+
+
+RECOMMENDED SETUP:
+==================
+For best compatibility across all devices and browsers:
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1a6b5a">
+
+
+TESTING YOUR FAVICON:
+=====================
+1. Upload files to your website
+2. Clear browser cache (Ctrl + Shift + Delete)
+3. Visit your website
+4. Check browser tab - you should see your logo icon!
+
+Tools to test:
+- https://realfavicongenerator.net/favicon_checker
+
+
+COMMON ISSUES:
+==============
+Problem: Favicon not showing
+Solution: Clear browser cache and hard refresh (Ctrl + F5)
+
+Problem: Old icon still showing
+Solution: Browser cached old favicon. Wait 24 hours or clear cache
+
+Problem: Works on desktop but not mobile
+Solution: Add apple-touch-icon.png and android-chrome files
+
+
+QUICK SUMMARY:
+==============
+1. Create favicon files (use favicon.io)
+2. Upload to website root folder
+3. Add <link> tags to all HTML files
+4. Test in browser
+5. Clear cache if needed
+
+
+Need Help?
+==========
+- Favicon Generator: https://favicon.io
+- Test Favicon: https://realfavicongenerator.net
+- Icon Editor: https://www.photopea.com (free Photoshop alternative)

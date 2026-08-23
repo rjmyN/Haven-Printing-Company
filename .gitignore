@@ -1,0 +1,65 @@
+# Haven Printing Company - Git Ignore File
+# Files and folders to exclude from version control
+
+# Node modules
+node_modules/
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Backup files
+*.bak
+*.backup
+*_backup.*
+
+# Large files (add your large images here if needed)
+# *.psd
+# *.ai
+
+# Environment files (if you add them later)
+.env
+.env.local
+.env.production
+
+# Build files (if you add build process later)
+dist/
+build/
+.cache/
+
+# FTP credentials (if you save them)
+.ftpconfig
+.ftppass
+
+# WordPress (if added later)
+wp-config.php
+wp-content/uploads/
+
+# Database exports
+*.sql
+*.sqlite
+*.db
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Documentation drafts
+*-draft.md
+*-old.md

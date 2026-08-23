@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio – View Haven Printing Company's past work. Business cards, banners, flyers, branded apparel and more." />
+    <title>Portfolio | Haven Printing Company INC</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.jpg" alt="Haven Printing Company Logo" class="logo-img" />
+                <span class="logo-text">Haven Printing <span class="accent">Co.</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="booking.html" class="nav-link btn-nav">Book Now</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <span class="section-tag light">Our Work</span>
+            <h1>Portfolio & Gallery</h1>
+            <p>A glimpse into the quality we deliver — every single time.</p>
+        </div>
+    </section>
+
+    <!-- FILTER + GALLERY -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">See the Work</span>
+                <h2 class="section-title">Our Print Portfolio</h2>
+                <p class="section-sub">Browse samples from our past projects — and when you're ready, let's create
+                    something for yours.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cards">Business Cards</button>
+                <button class="filter-btn" data-filter="banners">Banners</button>
+                <button class="filter-btn" data-filter="flyers">Flyers</button>
+                <button class="filter-btn" data-filter="apparel">Apparel</button>
+                <button class="filter-btn" data-filter="large">Large Format</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+
+                <div class="portfolio-item" data-category="cards">
+                    <div class="portfolio-img-real">
+                        <img src="Business premium card.jpg" alt="Premium Business Cards – Haven Printing Company" />
+                        <div class="portfolio-overlay">
+                            <h3>Premium Business Cards</h3>
+                            <p>Matte lamination, double-sided</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="banners">
+                    <div class="portfolio-img-real">
+                        <img src="backdrop banner.jpg" alt="Event Backdrop Banner – Haven Printing Company" />
+                        <div class="portfolio-overlay">
+                            <h3>Event Backdrop Banner</h3>
+                            <p>3m × 2m full-colour vinyl</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="flyers">
+                    <div class="portfolio-img-real">
+                        <img src="flyers1.jpg" alt="A5 Promotional Flyers – Haven Printing Company" />
+                        <div class="portfolio-overlay">
+                            <h3>A5 Promotional Flyers</h3>
+                            <p>Full colour, gloss finish</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="flyers">
+                    <div class="portfolio-img-real">
+                        <img src="flyers1.jpg" alt="Custom Flyers – Haven Printing Company" />
+                        <div class="portfolio-overlay">
+                            <h3>Custom Flyers</h3>
+                            <p>Full colour, double-sided</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="flyers">
+                    <div class="portfolio-img-real">
+                        <img src="A5 pomotional flyers.jpg" alt="A5 Promotional Flyers – Haven Printing Company" />
+                        <div class="portfolio-overlay">
+                            <h3>A5 Promotional Flyers</h3>
+                            <p>Full colour, gloss finish</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="apparel">
+                    <div class="portfolio-card-blank" style="--card-color:#2d6a4f">
+                        <div class="pcb-icon"><i class="fa-solid fa-shirt"></i></div>
+                        <h3>Corporate T-Shirts</h3>
+                        <p>Screen print, 50 units</p>
+                        <span class="pcb-tag">Apparel</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="large">
+                    <div class="portfolio-card-blank" style="--card-color:#1a6b5a">
+                        <div class="pcb-icon"><i class="fa-solid fa-expand"></i></div>
+                        <h3>Billboard Poster</h3>
+                        <p>High-resolution outdoor print</p>
+                        <span class="pcb-tag">Large Format</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="cards">
+                    <div class="portfolio-img-real">
+                        <img src="Business premium card.jpg" alt="Spot UV Business Cards – Haven Printing Company" />
+                        <div class="portfolio-overlay">
+                            <h3>Spot UV Business Cards</h3>
+                            <p>Premium raised finish</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="flyers">
+                    <div class="portfolio-img-real">
+                        <img src="brochure.jpg" alt="Professional Brochure – Haven Printing Company" />
+                        <div class="portfolio-overlay">
+                            <h3>Professional Brochure</h3>
+                            <p>Full colour, tri-fold design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="banners">
+                    <div class="portfolio-card-blank" style="--card-color:#00b4d8">
+                        <div class="pcb-icon"><i class="fa-solid fa-flag"></i></div>
+                        <h3>Pull-Up Display Stand</h3>
+                        <p>Retractable roll-up banner</p>
+                        <span class="pcb-tag">Banners</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="large">
+                    <div class="portfolio-card-blank" style="--card-color:#264653">
+                        <div class="pcb-icon"><i class="fa-solid fa-panorama"></i></div>
+                        <h3>Event Photo Backdrop</h3>
+                        <p>5m × 3m photo print</p>
+                        <span class="pcb-tag">Large Format</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Like What You See?</h2>
+                <p>Let's create something just as great for your business.</p>
+                <div class="cta-actions">
+                    <a href="booking.html" class="btn btn-white">Start Your Order</a>
+                    <a href="https://wa.me/231779385933" target="_blank" class="btn btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo.jpg" alt="Haven Printing Logo" class="footer-logo" />
+                    <p>Haven Printing Company INC — delivering premium printing services across Liberia since 2018.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1G3RQKBgkR/?mibextid=wwXIfr" target="_blank"
+                            aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://wa.me/231779385933" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Business Cards</a></li>
+                        <li><a href="services.html">Banners & Signage</a></li>
+                        <li><a href="services.html">Flyers & Leaflets</a></li>
+                        <li><a href="services.html">Brochures</a></li>
+                        <li><a href="services.html">Branded T-Shirts</a></li>
+                        <li><a href="services.html">Large Format Printing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i> Paynesville, Liberia</li>
+                        <li><i class="fa-solid fa-phone"></i> <a href="tel:+231779385933">+231 779 385 933</a></li>
+                        <li><i class="fa-solid fa-envelope"></i> <a
+                                href="mailto:info@havenprinting.com">info@havenprinting.com</a></li>
+                        <li><i class="fa-solid fa-clock"></i> Mon–Sat: 8:00 AM – 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Haven Printing Company INC. All rights reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart" style="color:#e63946"></i> in Liberia</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/231779385933" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
