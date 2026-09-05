@@ -190,3 +190,83 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// ---- DUAL WHATSAPP POPUP ----
+document.addEventListener('DOMContentLoaded', () => {
+    const whatsappFloat = document.querySelector('.whatsapp-float');
+    
+    if (whatsappFloat) {
+        whatsappFloat.addEventListener('click', (e) => {
+            e.preventDefault();
+            showWhatsAppModal();
+        });
+    }
+});
+
+function showWhatsAppModal() {
+    // Remove existing modal if any
+    const existingModal = document.getElementById('whatsapp-modal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Create modal
+    const modal = document.createElement('div');
+    modal.id = 'whatsapp-modal';
+    modal.className = 'whatsapp-modal';
+    modal.innerHTML = `
+        <div class="whatsapp-modal-overlay"></div>
+        <div class="whatsapp-modal-content">
+            <button class="whatsapp-modal-close" aria-label="Close">
+                <i class="fa-solid fa-times"></i>
+            </button>
+            <div class="whatsapp-modal-header">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h3>Chat with Us on WhatsApp</h3>
+                <p>Choose a number to start chatting</p>
+            </div>
+            <div class="whatsapp-options">
+                <a href="https://wa.me/231779385933" target="_blank" class="whatsapp-option">
+                    <div class="whatsapp-option-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="whatsapp-option-info">
+                        <strong>Main Office</strong>
+                        <span>+231 779 385 933</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://wa.me/2310779385933" target="_blank" class="whatsapp-option">
+                    <div class="whatsapp-option-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="whatsapp-option-info">
+                        <strong>Customer Service</strong>
+                        <span>+231 0779 385 933</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    // Close modal handlers
+    const closeBtn = modal.querySelector('.whatsapp-modal-close');
+    const overlay = modal.querySelector('.whatsapp-modal-overlay');
+
+    closeBtn.addEventListener('click', () => closeWhatsAppModal());
+    overlay.addEventListener('click', () => closeWhatsAppModal());
+
+    // Animate in
+    setTimeout(() => modal.classList.add('active'), 10);
+}
+
+function closeWhatsAppModal() {
+    const modal = document.getElementById('whatsapp-modal');
+    if (modal) {
+        modal.classList.remove('active');
+        setTimeout(() => modal.remove(), 300);
+    }
+}
