@@ -327,8 +327,6 @@ strong {
     height: 56px;
     object-fit: contain;
     border-radius: 6px;
-    background: white;
-    padding: 3px;
 }
 
 .logo-text {
@@ -879,8 +877,6 @@ strong {
     height: auto;
     object-fit: contain;
     border-radius: 8px;
-    background: white;
-    padding: 6px 8px;
     margin-bottom: 16px;
 }
 
@@ -2770,9 +2766,7 @@ strong {
     width: 110px;
     height: auto;
     object-fit: contain;
-    background: white;
     border-radius: 8px;
-    padding: 6px 8px;
     margin: 0 auto 20px;
 }
 
@@ -2927,9 +2921,7 @@ strong {
     width: 56px;
     height: 56px;
     object-fit: contain;
-    background: white;
     border-radius: 8px;
-    padding: 4px;
     flex-shrink: 0;
 }
 
@@ -3764,9 +3756,7 @@ box-shadow: var(--shadow-lg);
     object-fit: contain;
     margin: 0 auto 24px;
     display: block;
-    background: white;
     border-radius: 8px;
-    padding: 12px;
 }
 
 .sfb-overlay h4 {
@@ -4409,7 +4399,7 @@ box-shadow: var(--shadow-lg);
     font-weight: 500;
 }
 
-.whatsapp-option > i.fa-arrow-right {
+.whatsapp-option>i.fa-arrow-right {
     color: var(--green);
     font-size: 1.2rem;
     transition: transform 0.3s ease;
@@ -4417,14 +4407,17 @@ box-shadow: var(--shadow-lg);
     z-index: 1;
 }
 
-.whatsapp-option:hover > i.fa-arrow-right {
+.whatsapp-option:hover>i.fa-arrow-right {
     transform: translateX(4px);
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
